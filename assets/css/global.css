@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+.centerAbsolute {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.imgCover {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.overlay {
+    content: "";
+    background: #3A4754;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.d-flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.center, .swiper-button-next, .swiper-button-prev {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-big {
+    font-weight: 800;
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 0.84;
+    letter-spacing: 2px;
+}
+
+.text-gray {
+    color: #3A4754 !important;
+}
+
+.white-outline {
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+    opacity: 0.6;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-main {
+    color: #77C220 !important;
+}
+
+.fz18 {
+    font-size: 18px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 1.286;
+}
+
+.price span {
+    font-size: 17px;
+    display: inline-block;
+    margin: 0 0 -5px -8px;
+}
+
+p {
+    line-height: 1.217;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+body, html {
+    width: 100%;
+    max-width: 100vw;
+    font-family: "Proxima Nova";
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body.fix, html.fix {
+    overflow: hidden;
+}
+
+input, textarea {
+    font-family: "Proxima Nova";
+}
+
+.container {
+    max-width: 1360px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.bottomLine {
+    position: relative;
+}
+
+.bottomLine:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+@media (min-width: 1300px) {
+    .hoverBottomLine:after {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        transition: 0.25s;
+    }
+
+    .hoverBottomLine:hover:after {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+.swiper-box {
+    position: relative;
+}
+
+.swiper {
+    position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 35px;
+    height: 24px;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s;
+    position: absolute;
+    z-index: 1050;
+}
+
+.swiper-button-next:before, .swiper-button-prev:before {
+    content: "";
+    background: url(../images/icons/arrow.svg) center/contain no-repeat;
+    width: 31px;
+    display: block;
+    height: 32px;
+    transition: 0.25s;
+}
+
+.swiper-button-next:hover:before, .swiper-button-prev:hover:before {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    background: #333;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 55px;
+    line-height: 1.218;
+    margin-bottom: 59px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.222;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.208;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+label {
+    display: block;
+}
+
+input {
+    outline: none;
+    display: block;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    font-family: "Proxima Nova";
+    height: 47px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.25s;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder {
+    color: #fff;
+}
+
+input:-ms-input-placeholder {
+    color: #fff;
+}
+
+input::-ms-input-placeholder {
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.input-mb {
+    margin-bottom: 35px;
+}
+
+.burger {
+    position: relative;
+    display: block;
+    z-index: 2000;
+    height: 26px;
+    width: 32px;
+    cursor: pointer;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: -8px 0 0 0;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
+.burger .hamburger-lines {
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    z-index: 2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.burger .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.burger .hamburger-lines .line1 {
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.burger .hamburger-lines .line2 {
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.burger .hamburger-lines .line3 {
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.burger.active .hamburger-lines .line1 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.burger.active .hamburger-lines .line2 {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.burger.active .hamburger-lines .line3 {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

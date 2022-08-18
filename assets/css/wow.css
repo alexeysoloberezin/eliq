@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.animate {
+  /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+    -webkit-transform: translateX(100px) !important;
+    transform: translateX(100px) !important;
+}
+
+@media (max-width: 1000px) {
+    .animate {
+        -webkit-transform: translateX(30px) !important;
+        transform: translateX(30px) !important;
+    }
+}
+
+.animate.bottomTop {
+    opacity: 0;
+    -webkit-transform: translateY(50px) !important;
+    transform: translateY(50px) !important;
+}
+
+.animate.animated {
+    opacity: 1;
+    transition: all 1.2s ease-in-out;
+    -webkit-transform: translateX(0) !important;
+    transform: translateX(0) !important;
+}

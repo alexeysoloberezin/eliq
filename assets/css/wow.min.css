@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.animate {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateX(100px) !important;
+}
+@media (max-width: 1000px) {
+  .animate {
+    transform: translateX(30px) !important;
+  }
+}
+
+.animate.bottomTop {
+  opacity: 0;
+  transform: translateY(50px) !important;
+}
+
+.animate.animated {
+  opacity: 1;
+  transition: all 1.2s ease-in-out;
+  transform: translateX(0) !important;
+}
